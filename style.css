@@ -1,0 +1,41 @@
+/* Βασικό reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:Arial, sans-serif; line-height:1.6; background:#f9f9f9; color:#333; text-align:center; }
+header { position:relative; height:300px; overflow:hidden; color:white; text-align:center; }
+.banner-img { width:100%; height:100%; object-fit:cover; filter: brightness(70%); }
+.overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
+.header-content { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }
+.header-content .logo { width:120px; border-radius:50%; border:3px solid white; margin-bottom:15px; }
+.header-content h1 { font-size:2.5rem; margin-bottom:10px; }
+.header-content p { font-size:1.2rem; }
+.video-section { padding:40px 20px; background:white; }
+.video-wrapper { max-width:800px; margin:0 auto; }
+.video-thumbnail { position:relative; display:inline-block; max-width:800px; cursor:pointer; }
+.video-thumbnail img { width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.3); }
+#play-btn { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(255,0,0,0.8); border:none; color:white; font-size:2rem; padding:20px 30px; border-radius:50%; cursor:pointer; transition:0.3s; }
+#play-btn:hover { background:rgba(200,0,0,0.9); }
+#video-frame { width:100%; height:450px; border-radius:12px; border:none; box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+.video-list { padding:40px 20px; background:#f2f2f2; }
+.videos-container { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+.video-card { width:300px; background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden; text-align:left; }
+.video-card img { width:100%; }
+.video-card h3 { padding:10px; font-size:1rem; }
+.about { padding:50px 20px; }
+.about p { max-width:700px; margin:20px auto; font-size:1.1rem; }
+.newsletter { background:#ff0000; color:white; padding:40px 20px; }
+.newsletter input[type="email"] { padding:10px; border-radius:6px; border:none; margin-right:10px; width:250px; }
+.newsletter button { padding:10px 20px; border:none; border-radius:6px; background:white; color:#ff0000; font-weight:bold; cursor:pointer; }
+.newsletter button:hover { background:#f2f2f2; }
+.socials { background:#222; color:white; padding:40px 20px; }
+.social-links a { display:inline-block; margin:10px; text-decoration:none; padding:12px 24px; background:#ff0000; color:white; border-radius:8px; transition:0.3s; }
+.social-links a:hover { background:#cc0000; }
+footer { background:#111; color:#aaa; padding:20px; font-size:0.9rem; }
+
+/* Responsive για κινητά */
+@media (max-width: 768px) {
+  .header-content h1 { font-size: 2rem; }
+  .header-content p { font-size: 1rem; }
+  .video-card { width: 90%; }
+  .newsletter input[type="email"] { width: 70%; margin-bottom: 10px; }
+  .newsletter button { width: 50%; }
+}
